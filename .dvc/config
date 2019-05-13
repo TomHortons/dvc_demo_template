@@ -1,0 +1,4 @@
+['remote "gscache"']
+url = gs://gs-dvc/dvc_demo_template
+[cache]
+gs = gscache
