@@ -2,3 +2,7 @@
 url = gs://gs-dvc/dvc_demo_template
 [cache]
 gs = gscache
+['remote "gsRemote"']
+url = gs://gs-dvc/dvc_demo_template
+[core]
+remote = gsRemote
