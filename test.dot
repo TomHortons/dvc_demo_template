@@ -1,0 +1,9 @@
+strict digraph  {
+"featurize.dvc";
+"train.dvc";
+"prepare.dvc";
+"data/data.xml.dvc";
+"featurize.dvc" -> "train.dvc";
+"prepare.dvc" -> "featurize.dvc";
+"data/data.xml.dvc" -> "prepare.dvc";
+}
