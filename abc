@@ -1,0 +1,19 @@
+Adding '.dvc/state' to '.dvc/.gitignore'.
+Adding '.dvc/lock' to '.dvc/.gitignore'.
+Adding '.dvc/config.local' to '.dvc/.gitignore'.
+Adding '.dvc/updater' to '.dvc/.gitignore'.
+Adding '.dvc/updater.lock' to '.dvc/.gitignore'.
+Adding '.dvc/repos' to '.dvc/.gitignore'.
+Adding '.dvc/state-journal' to '.dvc/.gitignore'.
+Adding '.dvc/state-wal' to '.dvc/.gitignore'.
+Adding '.dvc/cache' to '.dvc/.gitignore'.
+strict digraph  {
+"featurize.dvc";
+"train.dvc";
+"prepare.dvc";
+"data/data.xml.dvc";
+"featurize.dvc" -> "train.dvc";
+"prepare.dvc" -> "featurize.dvc";
+"data/data.xml.dvc" -> "prepare.dvc";
+}
+
