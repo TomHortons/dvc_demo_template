@@ -1,0 +1,14 @@
+md5: 1f0c79a2814a6daee6aa1bc88b21910e
+cmd: echo E > E
+wdir: .
+deps:
+- md5: b39bfc0e26a30024c76e4dcb8a1eae87
+  path: C
+- md5: 57b8d745384127342f95660d97e1c9c2
+  path: D
+outs:
+- md5: 787c9a8e2148e711f6e9f44696cf341f
+  path: E
+  cache: true
+  metric: false
+  persist: false
