@@ -1,0 +1,14 @@
+strict digraph  {
+"second_pipeline/D" [cmd="echo D > D", dvc="second_pipeline/D.dvc"];
+"second_pipeline/A" [cmd="echo A > A", dvc="second_pipeline/A.dvc"];
+"second_pipeline/F" [cmd="echo F > F", dvc="second_pipeline/F.dvc"];
+"second_pipeline/C" [cmd="echo C > C", dvc="second_pipeline/C.dvc"];
+"second_pipeline/B" [cmd="echo B > B", dvc="second_pipeline/B.dvc"];
+"second_pipeline/E" [cmd="echo E > E", dvc="second_pipeline/E.dvc"];
+"second_pipeline/D" -> "second_pipeline/E"  [cmd="echo D > D", dvc="second_pipeline/D.dvc"];
+"second_pipeline/A" -> "second_pipeline/B"  [cmd="echo A > A", dvc="second_pipeline/A.dvc"];
+"second_pipeline/C" -> "second_pipeline/F"  [cmd="echo C > C", dvc="second_pipeline/C.dvc"];
+"second_pipeline/C" -> "second_pipeline/E"  [cmd="echo C > C", dvc="second_pipeline/C.dvc"];
+"second_pipeline/B" -> "second_pipeline/D"  [cmd="echo B > B", dvc="second_pipeline/B.dvc"];
+"second_pipeline/B" -> "second_pipeline/C"  [cmd="echo B > B", dvc="second_pipeline/B.dvc"];
+}
