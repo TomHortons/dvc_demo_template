@@ -1,0 +1,14 @@
+strict digraph  {
+"second_pipeline/B";
+"second_pipeline/D";
+"second_pipeline/C";
+"second_pipeline/F";
+"second_pipeline/A";
+"second_pipeline/E";
+"second_pipeline/B" -> "second_pipeline/D";
+"second_pipeline/B" -> "second_pipeline/C";
+"second_pipeline/D" -> "second_pipeline/E";
+"second_pipeline/C" -> "second_pipeline/F";
+"second_pipeline/C" -> "second_pipeline/E";
+"second_pipeline/A" -> "second_pipeline/B";
+}
