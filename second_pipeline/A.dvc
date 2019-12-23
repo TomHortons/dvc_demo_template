@@ -1,0 +1,9 @@
+md5: 4f47cc2394f4ff3aa9ac4af0c8af7993
+cmd: echo A > A
+wdir: .
+outs:
+- md5: bf072e9119077b4e76437a93986787ef
+  path: A
+  cache: true
+  metric: false
+  persist: false
